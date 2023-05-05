@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    font-display: swap;
+    font-weight: 100 900;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
+
+    
+}
+
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin:0;
+    font: inherit;
+}
+
+img,
+svg{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'HankenGrotesk';
+    font-size: 16px;
+    
+}
+
+
+@media (min-width:600px){
+    body{
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+}   
+
+.title-1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 1em;
+    color: rgba(255, 255, 255, 0.582);
+
+}
+
+.section-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 17px;
+    color: rgba(6, 25, 77, 0.925)
+}
+
+
+.attribution {
+    font-size: 12px; text-align: center;
+    
+}
+
+.attribution a {
+    color: rgb(62, 62, 168)
+}
+
+.flex-group{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+
+}
+
+.grid-flow{
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+}
+
+.grid-flow[data-spacing="large"] {
+    gap: 2rem;
+}
+
+.result-summary{
+    max-width: 46rem;
+    display: grid;
+    
+}
+
+@media (min-width: 600px){
+    .result-summary{
+        margin-inline: 1rem;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 2rem ;
+        overflow: hidden;
+        box-shadow: 1px 1px 1rem;
+    }
+
+
+    .results-grid-flow{
+        border-radius: 0 0 2rem 2rem;
+        padding: 2.5em;
+        
+    }
+
+
+}
+.results-grid-flow{
+
+    padding: 2.5em;
+    color: aliceblue ;
+    max-width: 46rem;
+    text-align: center;
+    background: rgb(45,52,206);
+    background: linear-gradient(0deg, rgba(45,52,206,1) 10%, rgba(113,0,255,1) 91%);
+    border-radius: 0 0 2rem 2rem;
+}
+
+.result-rank span{
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    
+}
+.result-t {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.356);
+}
+
+.result-score{
+    display: grid;
+    place-content: center;
+
+    width: 12rem;
+    margin-inline: auto;
+    margin-bottom: 1em;
+
+    background: rgb(72,1,133);
+    background: linear-gradient(0deg, rgba(72,1,133,0.48363095238095233) 5%, rgba(7,10,98,0.7945553221288515) 95%);
+
+    
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.result-score span{
+    display: block;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1;
+    color: white;
+
+}
+
+.summary-grid-flow{
+
+    margin: auto;
+    align-items: center;
+
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;    
+}
+
+.summary-item-titler{
+    font-weight: 600;
+    color: red;  
+}
+
+.summary-item-titlem{
+    font-weight: 600;
+    color: rgb(255, 166, 0);  
+}
+
+.summary-item-titlev{
+    font-weight: 600;
+    color: rgb(50, 211, 136);  
+}
+
+.summary-item-titlevi{
+    font-weight: 600;
+    color: blue;  
+}
+
+.summary-item[data-item-type="accent-1"] {
+    background: rgba(255, 0, 0, 0.062);
+} 
+
+.summary-item[data-item-type="accent-2"] {
+    background: rgba(255, 166, 0, 0.062);
+} 
+
+.summary-item[data-item-type="accent-3"] {
+    background: rgba(50, 211, 136, 0.075);
+} 
+
+.summary-item[data-item-type="accent-4"] {
+    background: rgba(0, 0, 255, 0.068);
+} 
+
+
+.summary-score span{
+    font-size: 1em;
+    font-weight: 900;
+    color: rgba(6, 25, 77, 0.925);
+
+}
+
+.summary-score {
+    font-size: 1em;
+    font-weight: 900;
+    color: rgba(6, 25, 77, 0.459);
+
+}
+
+.button1{
+    color: rgb(233, 233, 255);
+    line-height: 1;
+
+    background: rgb(14,0,255);
+    background: linear-gradient(0deg, rgba(14,0,255,1) 0%, rgba(45,52,206,1) 10%); 
+    
+
+    padding: 1rem 2rem;
+    border: 0;
+    margin: 2.2em;
+    
+
+    border-radius: 100vw;
+    cursor: pointer;
+    width: 14em;
+    
+}
+
+.button1:hover,
+.button1:focus-visible{
+    
+    background: linear-gradient(0deg, rgba(0,93,255,1) 0%, rgba(45,52,206,1) 10%, rgba(64, 18, 158, 0.87) 100%);
+}
