@@ -1,0 +1,16 @@
+
+body{
+   background-color: rgb(252, 252, 252) ;
+
+}
+
+.meiot{
+   display: flex;
+
+}
+
+span{
+   font-size: 18px;
+
+}
+
