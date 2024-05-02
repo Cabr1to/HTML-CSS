@@ -1,0 +1,101 @@
+ .attribution { font-size: 11px; text-align: center;position: fixed;
+  bottom: 0; width: 100%}
+ .attribution a { color: hsl(228, 45%, 44%); }
+
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ body {
+     background-color: hsl(235, 18%, 26%);
+
+     font-size: 16px;
+     font-family: "Roboto Light";
+     font-weight: 400;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+
+ .container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 900px;
+    height: 650px;
+    border-radius: 30px;
+     top: 50%;
+     margin-top: 100px;
+ }
+
+ .text_box {
+     color: hsl(235, 18%, 26%);
+     padding: 30px;
+     flex-direction: column;
+     height: 500px;
+     width: 50%;
+ }
+
+ .head {
+     padding-bottom: 20px;
+     font-size: 50px;
+ }
+
+ .description {
+     display: flex;
+     flex-direction: column;
+     padding-bottom: 10px;
+     padding-top: 15px;
+ }
+ .description p {
+     padding: 10px;
+     margin-left: 15px;
+ }
+
+ .e_field {
+     padding-top: 35px;
+ }
+
+
+ .e_field span {
+     color: hsl(234, 29%, 20%);
+     font-weight: 700;
+ }
+
+ .e_field form {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+ }
+
+#email {
+    border-radius: 10px;
+    height: 50px;
+    border-color: hsl(231, 7%, 60%);
+}
+
+input{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+ .imagem {
+     display: block;
+     margin-left: 20px;
+ }
+#subscribe {
+    background-color: hsl(234, 29%, 20%);
+}
