@@ -12,7 +12,7 @@
      background-color: hsl(235, 18%, 26%);
 
      font-size: 16px;
-     font-family: "Roboto Light";
+     font-family: "Arial";
      font-weight: 400;
      display: flex;
      align-items: center;
@@ -25,11 +25,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 900px;
+    width: 1000px;
     height: 650px;
     border-radius: 30px;
-     top: 50%;
-     margin-top: 100px;
+    top: 50%;
+    margin-top: 100px;
+
+    /*
+    CENTRALIZAR
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    */
+
  }
 
  .text_box {
@@ -57,7 +67,7 @@
  }
 
  .e_field {
-     padding-top: 35px;
+     padding-top: 26px;
  }
 
 
@@ -80,8 +90,9 @@
 
 input{
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    /*margin: top right bottom left*/
+    margin: 10px 2px 20px 2px;
+    border: 1px solid #a5a5a5;
 }
 
 button {
@@ -90,12 +101,33 @@ button {
     color: white;
     border-radius: 10px;
     font-weight: 700;
+    cursor: pointer;
+    border: 0;
+
 }
+
+#subscribe{
+    background-color: hsl(234, 29%, 20%);
+    margin: 2px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 6s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+#subscribe:hover{
+    background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%);
+     background-position: left center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+ }
 
  .imagem {
      display: block;
      margin-left: 20px;
  }
-#subscribe {
-    background-color: hsl(234, 29%, 20%);
-}
