@@ -86,6 +86,7 @@
     border-radius: 10px;
     height: 50px;
     border-color: hsl(231, 7%, 60%);
+    outline: 0;
 }
 
 input{
