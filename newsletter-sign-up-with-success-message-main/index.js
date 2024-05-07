@@ -1,12 +1,32 @@
-function Subscribe () {
-    var subs = document.getElementById('subscribe');
+const email = document.getElementById("email");
+const form = document.getElementById("e_form");
+const span = document.getElementById("span_r");
+const subs = document.getElementById('subscribe');
+const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
 
+function verify() {
+    if (email.value == "" || !emailRegex.test(email.value)){
+        set_error();
+    }
+    else {
+        remove_error();
+    }
 }
 
-var email = document.getElementById("email");
+function set_error() {
+    span.display = 'block'
+    email.style.backgroundColor = "rgba(255,195,195,0.25)"
+    email.style.border = '2px solid #e63636';
+}
+
+function remove_error() {
+    span.display = 'none'
+    email.style.border = '';
+}
+
 
 email.addEventListener('focus', ()=>{
-    email.style.borderColor = "hsl(240,1%,17%)";
+    email.style.borderColor = "hsl(240,73%,72%)";
 });
 
 email.addEventListener('blur', ()=>{

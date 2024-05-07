@@ -34,10 +34,11 @@
       </div>
 
       <div class="e_field">
-        <span>Email address</span>
-        <form>
-          <input type="text" id="email" placeholder="email@company.com">
-          <button type="submit" id="subscribe" onclick="Subscribe()">Subscribe to monthly newsletter</button>
+        <span class="span_e">Email address</span>
+        <span id="span_r">Valid email required</span>
+        <form id="e_form">
+          <input type="text" id="email" placeholder="email@company.com" oninput="verify()">
+          <button type="submit" id="subscribe" >Subscribe to monthly newsletter</button>
         </form>
       </div>
 
