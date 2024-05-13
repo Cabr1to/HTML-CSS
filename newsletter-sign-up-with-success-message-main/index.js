@@ -14,13 +14,14 @@ function verify() {
 }
 
 function set_error() {
-    span.display = 'block'
+    span.display = 'block';
     email.style.backgroundColor = "rgba(255,195,195,0.25)"
     email.style.border = '2px solid #e63636';
 }
 
 function remove_error() {
-    span.display = 'none'
+    span.display = 'none';
+    email.style.backgroundColor = "rgb(255,255,255)"
     email.style.border = '';
 }
 
