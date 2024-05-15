@@ -1,0 +1,94 @@
+ .attribution { font-size: 11px; text-align: center;position: fixed;
+  bottom: 0; width: 100%}
+ .attribution a { color: hsl(228, 45%, 44%); }
+
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ body {
+     background-color: hsl(235, 18%, 26%);
+
+     font-size: 16px;
+     font-family: "Arial";
+     font-weight: 400;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+
+ .container {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .text_box {
+     color: hsl(235, 18%, 26%);
+     padding: 30px;
+     flex-direction: column;
+     height: 320px;
+     width: 90%;
+     position: absolute;
+     left: 50%;
+     top: 52%;
+     transform: translate(-50%, -50%);
+ }
+
+ .head {
+     color: hsl(233, 20%, 18%);
+     padding-bottom: 30px;
+     font-size: 50px;
+     line-height: 1em;
+     font-weight: bolder;
+ }
+
+ .description {
+     line-height: 1.5em;
+     margin-bottom: 30px;
+ }
+
+ .img_check {
+     padding: 40px;
+ }
+
+ button {
+     top: 100%;
+     left: 50%;
+     padding: 10px;
+     height: 50px;
+     color: white;
+     border-radius: 10px;
+     font-weight: 700;
+     cursor: pointer;
+     border: 0;
+     width: 390px;
+ }
+
+ #dismiss{
+    background-color: hsl(234, 29%, 20%);
+    margin: 2px;
+    padding: 15px 45px;
+    font-size: 14px;
+    text-align: center;
+    transition: 1.2s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+#dismiss:hover{
+    background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%);
+     background-position: left center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+ }

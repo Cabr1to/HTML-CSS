@@ -7,9 +7,11 @@ const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
 function verify() {
     if (email.value == "" || !emailRegex.test(email.value)){
         set_error();
+        return 1;
     }
     else {
         remove_error();
+        return 0;
     }
 }
 
@@ -23,6 +25,10 @@ function remove_error() {
     span.display = 'none';
     email.style.backgroundColor = "rgb(255,255,255)"
     email.style.border = '';
+}
+
+function success() {
+    location.href='ok.html';
 }
 
 

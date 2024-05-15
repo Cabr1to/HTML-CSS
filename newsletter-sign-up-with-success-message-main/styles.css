@@ -10,7 +10,6 @@
 
  body {
      background-color: hsl(235, 18%, 26%);
-
      font-size: 16px;
      font-family: "Arial";
      font-weight: 400;
@@ -28,31 +27,30 @@
     width: 1000px;
     height: 650px;
     border-radius: 30px;
-    top: 50%;
-    margin-top: 100px;
-
-    /*
-    CENTRALIZAR
-
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    */
-
  }
 
  .text_box {
-     color: hsl(235, 18%, 26%);
+     color: hsl(245, 18%, 26%);
      padding: 30px;
      flex-direction: column;
      height: 500px;
      width: 50%;
  }
 
+ .text_box p {
+     line-height: 2.0em;
+ }
+
  .head {
+     color: hsl(233, 20%, 18%);
      padding-bottom: 20px;
      font-size: 50px;
+     font-weight: bolder;
+
  }
 
  .description {
@@ -113,7 +111,6 @@ button {
     font-weight: 700;
     cursor: pointer;
     border: 0;
-
 }
 
 #subscribe{
@@ -122,7 +119,7 @@ button {
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
-    transition: 6s;
+    transition: 2s;
     background-size: 200% auto;
     color: white;
     box-shadow: 0 0 20px #eee;
